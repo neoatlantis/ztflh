@@ -3,7 +3,7 @@
 import re
 
 
-entryPattern = re.compile("^[A-Z]([0-9\\.\\-]+)?\s.+")
+entryPattern = re.compile("^[A-Z]{1,2}([0-9\\.\\-\\+]+)?\s.+")
 isEntry = lambda i: entryPattern.match(i.strip())
 
 raw = []
